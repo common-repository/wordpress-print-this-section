@@ -1,0 +1,106 @@
+/* 
+    Document   : printthis
+    Created on : Mar 31, 2011, 1:40:10 PM
+    Author     : Scott Hair
+    Description:
+        Stylesheet for the print page.
+*/
+
+/* 
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.print-this-body {
+	font-family: Verdana, Arial, Tahoma;
+	font-size: 12px;
+	color: #000000;
+}
+
+.Center {
+	margin: 0px auto 0px auto;
+}
+
+#Outline {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border: 1px solid #000000;
+}
+
+#BlogTitle {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+#BlogDate {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#BlogContent {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+HR.Divider {
+	width: 80%;
+	height: 1px;
+	color: #000000;
+}
+
+#print-disclaimer {
+        text-align: center;
+}
+
+#print-link {
+        text-align: right;
+        margin-right: 20px;
+}
+
+.print-this-body .print-this-content {
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid #999999;
+}
+
+.print-this-content {
+    border: 1px solid #999999;
+    padding: 10px;
+    margin: 5px;
+    background-color: #EEEEEE;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.print-this-button-shell {
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+@media print {
+    #comments_controls,
+    #print-link {
+        display: none;
+    }
+
+    #Outline {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border: 0px solid #000000;
+    }
+
+    .print-this-body {
+        font-family: Verdana, Arial, Tahoma;
+        font-size: 10px;
+        color: #000000;
+    }
+}
